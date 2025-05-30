@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: lizmap-volcano-map3
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    buildFilter:
+      paths:
+        - docker-compose.yml
+        - .env
+        - render.yaml
+        - projects/**
+        - lizmap-config/**
+    autoDeploy: true
+
