@@ -3,7 +3,7 @@ version: "3.8"
 
 services:
   web:
-    image: 3liz/lizmap-web-client:${LIZMAP_VERSION}
+    image: joysonestibeiro/lizmap-volcano:latest
     restart: always
     ports:
       - 8080:80
