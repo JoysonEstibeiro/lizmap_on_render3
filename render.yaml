@@ -3,7 +3,7 @@ services:
     name: lizmap-volcano-map3
     env: docker
     plan: free
-    dockerComposePath: ./docker-compose.yml
+    dockerfilePath:./docker-compose.yml
     buildFilter:
       paths:
         - docker-compose.yml
