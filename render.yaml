@@ -1,11 +1,8 @@
-infrastructureVersion: 2
-
 services:
   - type: web
     name: lizmap-volcano-map3
     env: docker
     plan: free
-    dockerComposePath: ./docker-compose.yml
     buildFilter:
       paths:
         - docker-compose.yml
